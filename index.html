@@ -121,14 +121,31 @@
   <footer class="footer">
     <p>&copy; 2025 VAL & Co.</p>
   </footer>
+  <!-- Модальное окно с обновлённой формой -->
   <div id="order-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); z-index:9999; align-items:center; justify-content:center;">
     <div style="background:#fff; padding:2rem; border-radius:8px; max-width:400px; width:90%; position:relative; font-family:'Inter', sans-serif;">
       <button onclick="document.getElementById('order-modal').style.display='none'" style="position:absolute; top:0.5rem; right:0.7rem; font-size:1.2rem; background:none; border:none; cursor:pointer;">×</button>
       <h3 style="margin-top:0">Оформить заказ</h3>
       <form onsubmit="submitOrder(event)">
-        <input type="text" placeholder="Ваше имя" required style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
-        <input type="tel" placeholder="Телефон" required style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
-        <input type="text" id="productName" name="product" readonly style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #eee; background:#f5f5f5;">
+        <input type="text"
+               placeholder="Ваше имя"
+               required
+               pattern="[A-Za-zА-Яа-яЁё\s\-]{2,40}"
+               inputmode="text"
+               maxlength="40"
+               style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #ccc; border-radius:4px;"
+               oninput="this.value=this.value.replace(/[^A-Za-zА-Яа-яЁё\s\-]/g,'')"
+        >
+        <input type="tel"
+               placeholder="Телефон"
+               required
+               pattern="[0-9]{7,20}"
+               inputmode="tel"
+               maxlength="20"
+               style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #ccc; border-radius:4px;"
+               oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+        >
+        <input type="hidden" id="productName" name="product">
         <button type="submit" style="background:#a67c00; color:white; padding:0.5rem 1rem; border:none; border-radius:4px; cursor:pointer; width:100%;">Отправить</button>
       </form>
     </div>
@@ -184,5 +201,6 @@
       document.getElementById('order-modal').style.display = 'none';
     }
   </script>
+
 </body>
 </html>

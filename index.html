@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAL & Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo" style="text-align: center; margin: 0 auto; font-size: 2.2rem; letter-spacing: 2px;">
+        <span style="font-size: 2.2rem; letter-spacing: 2px;">VAL</span>
+        <span style="font-size: 1.2rem; font-style: italic;">& Co.</span>
+      </h1>
+      <nav style="font-family: 'Inter', sans-serif; font-size: 1rem; display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+        <a href="#about" style="padding: 0.4rem 1rem; border: 1px solid #a67c00; border-radius: 4px; color: #a67c00; text-decoration: none; transition: all 0.3s ease;">О нас</a>
+        <a href="#catalog" style="padding: 0.4rem 1rem; border: 1px solid #a67c00; border-radius: 4px; color: #a67c00; text-decoration: none; transition: all 0.3s ease;">Каталог</a>
+        <a href="#contact" style="padding: 0.4rem 1rem; border: 1px solid #a67c00; border-radius: 4px; color: #a67c00; text-decoration: none; transition: all 0.3s ease;">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <h2>Искусство. Ручная работа. Наследие.</h2>
+      <a href="#catalog" class="btn">Смотреть каталог</a>
+    </div>
+  </section>
+
+  <section id="about" class="about container" style="text-align: center;">
+    <h2>О VAL & Co.</h2>
+    <p>Мы создаем уникальные яйца в стиле Фаберже вручную. Каждое изделие — это отражение мастерства, традиций и вдохновения.</p>
+  </section>
+
+  <section id="catalog" class="catalog container" style="text-align: center;">
+    <h2>Каталог</h2>
+    <div class="cards" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
+      <div class="card">
+        <div class="img-placeholder">
+          <div class="buy-overlay">
+            <p style="margin: 0 0 0.5rem 0; color: #333; font-weight: bold;">3 900 ₽</p>
+            <a href="#" class="btn">Купить</a>
+          </div>
+        </div>
+        <h3>Яйцо "Империя"</h3>
+        <p>С золотыми акцентами</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">
+          <div class="buy-overlay">
+            <p style="margin: 0 0 0.5rem 0; color: #333; font-weight: bold;">4 200 ₽</p>
+            <a href="#" class="btn">Купить</a>
+          </div>
+        </div>
+        <h3>Яйцо "Зарево"</h3>
+        <p>С рубиновым покрытием</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">
+          <div class="buy-overlay">
+            <p style="margin: 0 0 0.5rem 0; color: #333; font-weight: bold;">3 700 ₽</p>
+            <a href="#" class="btn">Купить</a>
+          </div>
+        </div>
+        <h3>Яйцо "Северное сияние"</h3>
+        <p>Сине-зелёное сияние</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">
+          <div class="buy-overlay">
+            <p style="margin: 0 0 0.5rem 0; color: #333; font-weight: bold;">4 500 ₽</p>
+            <a href="#" class="btn">Купить</a>
+          </div>
+        </div>
+        <h3>Яйцо "Лунный свет"</h3>
+        <p>С перламутровым свечением</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">
+          <div class="buy-overlay">
+            <p style="margin: 0 0 0.5rem 0; color: #333; font-weight: bold;">5 100 ₽</p>
+            <a href="#" class="btn">Купить</a>
+          </div>
+        </div>
+        <h3>Яйцо "Бриллиант"</h3>
+        <p>Инкрустация стразами</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">
+          <div class="buy-overlay">
+            <p style="margin: 0 0 0.5rem 0; color: #333; font-weight: bold;">6 000 ₽</p>
+            <a href="#" class="btn">Купить</a>
+          </div>
+        </div>
+        <h3>Яйцо "Корона"</h3>
+        <p>Королевская отделка</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container" style="animation: fadeInUp 1s ease forwards; animation-delay: 0.3s; text-align: center;">
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами через удобный мессенджер:</p>
+    <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.5rem;">
+      <a href="https://t.me/waterfallnotadrip" target="_blank" title="Telegram" style="text-decoration: none;">
+        <img class="messenger-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" width="30" height="30">
+      </a>
+      <a href="https://wa.me/79163865366" target="_blank" title="WhatsApp" style="text-decoration: none;">
+        <img class="messenger-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" width="30" height="30">
+      </a>
+      <a href="https://instagram.com/valco.eggs" target="_blank" title="Instagram" style="text-decoration: none;">
+        <img class="messenger-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="30" height="30">
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 VAL & Co.</p>
+  </footer>
+  <div id="order-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); z-index:9999; align-items:center; justify-content:center;">
+    <div style="background:#fff; padding:2rem; border-radius:8px; max-width:400px; width:90%; position:relative; font-family:'Inter', sans-serif;">
+      <button onclick="document.getElementById('order-modal').style.display='none'" style="position:absolute; top:0.5rem; right:0.7rem; font-size:1.2rem; background:none; border:none; cursor:pointer;">×</button>
+      <h3 style="margin-top:0">Оформить заказ</h3>
+      <form onsubmit="submitOrder(event)">
+        <input type="text" placeholder="Ваше имя" required style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+        <input type="tel" placeholder="Телефон" required style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+        <input type="text" id="productName" name="product" readonly style="width:100%; margin-bottom:1rem; padding:0.5rem; border:1px solid #eee; background:#f5f5f5;">
+        <button type="submit" style="background:#a67c00; color:white; padding:0.5rem 1rem; border:none; border-radius:4px; cursor:pointer; width:100%;">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.buy-overlay .btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const product = this.closest('.card').querySelector('h3').textContent;
+        document.getElementById('productName').value = product;
+        document.getElementById('order-modal').style.display = 'flex';
+      });
+    });
+
+    function submitOrder(event) {
+      event.preventDefault();
+      const form = event.target;
+      const name = form.querySelector('input[placeholder="Ваше имя"]').value;
+      const phone = form.querySelector('input[placeholder="Телефон"]').value;
+      const product = form.querySelector('input[name="product"]').value;
+
+      const message = `🛒 Новый заказ!
+👤 Имя: ${name}
+📞 Телефон: ${phone}
+🎁 Товар: ${product}`;
+      const token = '8110642746:AAHA-udm-2Pn-jpEFYsJFfGQ7QuhSGspBVc';
+      const chatId = '1132440863';
+
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message
+        })
+      })
+      .then(res => {
+        if (res.ok) {
+          alert('Заказ отправлен! Мы свяжемся с вами.');
+          document.getElementById('order-modal').style.display = 'none';
+          form.reset();
+        } else {
+          alert('Ошибка отправки. Попробуйте позже.');
+        }
+      })
+      .catch(err => {
+        alert('Ошибка подключения. Попробуйте позже.');
+        console.error(err);
+      });
+      document.getElementById('order-modal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

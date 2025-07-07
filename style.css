@@ -177,3 +177,36 @@ a:hover {
     background-position: 1000px 1000px;
   }
 }
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .hero {
+    padding: 2rem 0.5rem;
+  }
+  .about, .catalog, .contact {
+    padding: 1.2rem 0.2rem;
+  }
+  h1.logo {
+    font-size: 1.3rem !important;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+}
